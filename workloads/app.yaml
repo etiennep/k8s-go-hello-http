@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
         - name: go-hello-http
-          image: "etiennep/go-hello-http:sha-86c9c41"
+          image: "etiennep/go-hello-http:sha-8d7259e"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
