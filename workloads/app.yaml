@@ -37,7 +37,7 @@ spec:
           imagePullPolicy: IfNotPresent
           env:
           - name: foo
-            value: bar-2
+            value: bar-3
           ports:
             - name: http
               containerPort: 8090
