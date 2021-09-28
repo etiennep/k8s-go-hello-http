@@ -1,5 +1,4 @@
 ---
-# Source: go-hello-http/templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -16,7 +15,6 @@ spec:
   selector:
     app.kubernetes.io/name: go-hello-http
 ---
-# Source: go-hello-http/templates/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -35,7 +33,7 @@ spec:
     spec:
       containers:
         - name: go-hello-http
-          image: "etiennep/go-hello-http:sha-1cfb392"
+          image: "etiennep/go-hello-http:sha-6af84de"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
